@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="Mobile.css">
+    <title>Paul Barns</title>
+  </head>
+  <body>
+    <div class="container">
+      <img
+      id="desktop"
+        src="images/james-barr-zy5JTdcC0fE-unsplash 1.png"
+        alt="Snow"
+        style="width: 100%;"
+      />
+
+      <div id="mobile">
+        <img src="images/james-barr-zy5JTdcC0fE-unsplash 2.png" alt="">
+      </div>
+      <div class="top-right">
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle"/>
+        <div class="menu">
+            <nav>
+                <a href="#Home"><span>Home</span></a>
+                <a href="#AboutMe"><span>About me</span></a>
+                <a href="#Gallery"><span>Gallery</span></a>
+                <a href="#Clients"><span>Clients</span></a>
+                <a href="#ContactMe"><span>Contact Me</span></a>
+              </nav>
+        </div>
+        
+      </div>
+      <div class="bottom-right">
+        <ul>
+          <li style="padding: 5x">
+            <a href="twitter.com">
+              <img src="images/Vector.jpg" alt="twitter" />
+            </a>
+          </li>
+          <li style="padding: 5px">
+            <a href="Instagram.com">
+              <img
+                src="data:image/png;base64,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"
+                alt="Instagram"
+                style="
+                  width: 20px;
+                  height: 20px;
+                  object-fit: cover;
+                  object-position: 50% 50%;
+                "
+              />
+            </a>
+          </li>
+          <li style="padding: 1px">
+            <a href="Youtube.com">
+              <img
+                src="data:image/png;base64,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"
+                alt="Youtube"
+                style="
+                  width: 20px;
+                  height: 29px;
+                  object-fit: cover;
+                  object-position: 50% 50%;
+                "
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="centered">
+        <h1>
+          Hello, <br />
+          I'm Paul Barns
+        </h1>
+
+        <h6>
+          Paul Barns is a young, energetic, and talented fashion designer
+          <br />
+          who focuses on his men’s clothing line, Paul Barns. <br />
+          His work draws inspiration from local African fabrics coupled with
+          <br />
+          Japanese tailoring designs. His designs are masculine, yet modern
+          <br />
+          and trendy by way of transforming an ordinary look into a <br />
+          sophisticated design that embraces elegance.
+        </h6>
+
+        <a href="#ContactMe"><button type="submit" style="padding: 10px; width: 100px">
+            Hire Me
+          </button></a>
+      </div>
+    </div>
+    <div class="Mobile-About">
+      <h2>About Me</h2>
+    </div>
+    
+    <div id="AboutMe">
+      <div>
+        <img
+          src="images/autri-taheri-Vj2zHsZ1uqw-unsplash 1.jpg"
+          alt=""
+        />
+      </div>
+      <div style="width: 715px; height: 504px; margin-top: 86px">
+        <h1>About Me</h1>
+        <h6 id="For-Desktop">
+          Paul Barns is a young, energetic, and talented fashion designer who
+          focuses on his men’s clothing line, Paul Barns. His work draws
+          inspiration from local African fabrics coupled with Japanese
+          tailoring designs. His designs are masculine, yet modern and trendy by
+          way of transforming an ordinary look into a sophisticated design that
+          embraces elegance. <br />
+          <br />
+          I began acquired his love for fashion when he was a young boy where he
+          spent his time sketching and drawing. He loves to work with colors,
+          and his awesome talent has seen his pieces worn by famous politicians
+          and celebrities. Young and successful, he is a talented fashion
+          designer to watch out for as his name continues to cause ripples in
+          both the local and global fashion industries. <br />
+          <br />
+          While in New York, I was employed in the Charivari Boutique where
+          president of the company, Barbara Weiser, noticed my potential and
+          passion for unique fashion and helped me launch my first fashion
+          collection. My passion for African fashion is profound. “Everything
+          begins for me with the print and fabric, which usually has some
+          shine,” exclaims Faturoti. My deep African roots, as well as extensive
+          global experience with having lived and worked in New York and Milan
+          have been instrumental in her success and international spotlight.
+          <br />
+          <br />
+          My pieces are also sold globally in the UK, US, and France. Anthony
+          uses his talent to make an impact on the community through a mentoring
+          program he runs that helps young and upcoming Nigerian designers excel
+          and compete on a global platform. Nature, colors, and artwork are his
+          main sources of inspiration.
+        </h6>
+
+        <h6 id="For-Mobile">
+          Paul Barns is a young, energetic, and talented fashion designer who
+          focuses on his men’s clothing line, Paul Barns. His work draws
+          inspiration from local African fabrics coupled with Japanese
+          tailoring designs. His designs are masculine, yet modern and trendy by
+          way of transforming an ordinary look into a sophisticated design that
+          embraces elegance. <br />
+          <br />
+          I began acquired his love for fashion when he was a young boy where he
+          spent his time sketching and drawing. He loves to work with colors,
+          and his awesome talent has seen his pieces worn by famous politicians
+          and celebrities. Young and successful, he is a talented fashion
+          designer to watch out for as his name continues to cause ripples in
+          both the local and global fashion industries. <br />
+        </h6>
+      </div>
+    </div>
+
+    <div id="Gallery">
+      <h1>Gallery</h1>
+      <h6>Have a look at a collection of my recent works.</h6>
+      <div>
+        <div class="images">
+          <img
+          style="margin-top: 15px"
+            src="images/daniel-schaffer-l8XuuamEfYU-unsplash 1.jpg"
+          />
+          <img
+          style="margin-top: 15px"
+            src="images/joanna-nix-walkup-IRi-FlOdjFU-unsplash 1.jpg"
+          />
+          <img
+          style="margin-top: 15px"
+            src="images/nick-karvounis-0lzxrijewmY-unsplash 1.jpg"
+          />
+          <img src="images/analise-benevides-Y9O5u1kwdbk-unsplash 1.jpg" />
+          <img
+          style="margin-top: 15px"
+            src="images/hls-44-oCwkft-Juug-unsplash 1.jpg"
+          />
+          <img
+            style="margin-top: 15px"
+            src="images/peter-sjo-Nxy-6QwGMzA-unsplash 1.jpg"
+          />
+        </div>
+        <div class="Mobile-Images">
+          <img
+          style="margin-top: 15px"
+            src="images/daniel-schaffer-l8XuuamEfYU-unsplash 1.jpg"
+          />
+        </div>
+        <!-- <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a> -->
+      </div>
+      <a href="Gallery.html"
+        ><button type="submit" style="padding: 10px; width: 100px">
+          View All <i class="fa-solid fa-arrow-right"></i></button
+      ></a>
+    </div>
+
+    <div id="Clients">
+      <h1>Our Clients</h1>
+      <h6>I have built my reputation working with these top brands</h6>
+      <div>
+        <a href="https://check-dc.com/" target="_blank"
+          ><img
+            src="images/Check-DC-full-logo.8076852.png"
+            alt="CheckDC"
+            style="margin-right: 50px; margin-top: 20px;"
+        /></a>
+        <a href="https://www.vogue.co.uk/?international" target="_blank"
+          ><img src="images/index.png" alt="Vogue" style="height: 100px; margin-top: 20px;"
+        /></a>
+        <a href="https://terrakulture.com/" target="_blank"
+          ><img src="images/images.png" alt="Vogue" style="margin-top: 20px;"
+        /></a>
+      </div>
+    </div>
+
+    <div id="ContactMe">
+      <h1>Contact Me</h1>
+      <h6>Need anything? Kindly fill the form below</h6>
+      <div class="Contact-flex">
+        <div>
+          <img src="images/autri-taheri-Vj2zHsZ1uqw-unsplash 1.jpg" alt="" />
+        </div>
+        <div>
+            <div class="Form_container">
+          <form name="=Contact_Me" method="post" data-netlify="true">
+              <label for="name">Name</label> <br> 
+              <input type="text" id="name" name="name" required /> <br>
+              <label for="Email address">Email</label> <br>
+              <input
+                type="email"
+                id="email"
+                required
+              /> <br>
+              <label for="subject">Subject</label> <br> 
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+              /> <br>
+              <label for="Messages">Messages</label> <br>
+              <textarea name="messages"></textarea>
+              <button type="submit" id="submit">Send Message</button>
+          </form>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+        <h6>Copyright © 2022 All rights reserved | Paul Barns <br>
+        Created By Paul Levites</h6>
+        <div class="footer-social-icons">
+            <a href="Twitter.com"><i class="fa-brands fa-twitter"></i></a>
+            <a href="Instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="Youtube.com" ><i class="fa-brands fa-youtube"></i></a>
+            <a href="github.com"><i class="fa-brands fa-github"></i></a>
+            
+        </div>
+    </footer>
+  </body>
+</html>

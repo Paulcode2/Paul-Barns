@@ -1,0 +1,500 @@
+ body{
+    background-color: #F2F2F2;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+ }
+ 
+ /* Container holding the image and the text */
+ .container {
+    position: relative;
+    text-align: center;
+  }
+  
+  
+  /* Top right text */
+  .top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+
+  label{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+.menu a{
+  clear: right;
+  margin: 0 10px; 
+}
+
+#toggle{
+    display: none;
+}
+
+  .top-right a{
+    text-decoration: none;
+    color: 
+    #A6A6A6;
+  }
+  
+  /* Bottom right text */
+  .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    color: transparent;
+  }
+  
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    color: #404040;
+  } 
+#mobile{
+  display: none;
+}
+  .centered button{
+    cursor: pointer;
+  }
+  
+  #For-Mobile{
+    display: none;
+  }
+
+  #AboutMe{
+    background: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+  }
+
+  #AboutMe img{
+    margin-top: 86px;
+    margin-left: 99.08px;
+    width: 505px;
+    height: 600px;
+  }
+
+  .Mobile-About h2{
+    display: none;
+  }
+  #AboutMe h1{
+    margin-left: 20px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-size: 32px;
+    line-height: 21px;
+    font-weight: 300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  #AboutMe h6{
+    margin-right: 100px;
+    font-family: 'lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    margin-left: 20px;
+  } 
+
+  #Gallery{
+    background: #F2F2F2;
+    margin-top: -30px;
+  }
+
+  #Gallery h1{
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  #Gallery h6{
+    text-align: center;
+    font-weight: 400;
+    color: #404040;
+  }
+
+  .images{
+   padding: 35px;
+   display: flex;
+   flex-wrap: wrap;
+  }
+
+  .Mobile-Images{
+    display: none;
+  }
+
+  #Gallery button{
+    text-align: center;
+    margin-left: 625px;
+    cursor: pointer;
+  }
+
+  #Clients h1{
+    font-family: 'Lato';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .prev{
+    display: none;
+  }
+  .next{
+    display: none;
+  }
+  #Clients h6{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  #Clients img{
+    background-color: #F2F2F2;
+    width: 250px;
+    margin-left: 100px;
+  }
+
+  #ContactMe h1{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    size: 32px;
+    line-height: 21px;
+    text-align: center;
+  }
+
+  #ContactMe h6{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .Contact-flex{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .Contact-flex img{
+    margin-left: 99px;
+  }
+
+  .Form_container{
+    margin-right: 5rem;
+  }
+input{
+    width: 80%;
+    height: 2rem;
+    padding-right: 1rem;
+    padding-left: 3rem;
+    margin-right: 5rem;
+    margin-top: 2rem;
+    border: 1px solid #404040;
+    border-radius: 2px;
+}
+
+textarea{
+    
+    padding-bottom: 5rem;
+    width: 100%;
+    background: #F2F2F2;
+    border: 1px solid #404040;
+}
+
+#submit{
+    margin-left: 20px;
+    width: 50%;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    background: #F2F2F2;
+    border: 1px solid #404040;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background: #A6A6A6;
+    transition: 0.5s;
+}
+
+
+footer h6{
+    text-align: center;
+    font-weight: 400;
+}
+footer{
+    text-align: center;
+}
+footer a{
+    color:black;
+}
+
+
+@media only screen and (max-width: 500px) {
+    label{
+        display: block;
+        cursor: pointer;
+    }
+
+    .bottom-right{
+      display: none;
+    }
+
+    .menu{
+        text-align: center;
+        width: 400px;
+        display: none;
+    }
+
+    .menu a{
+      padding: 20px;
+      display:block;
+      border-bottom: 1px solid #eaeae8;
+      margin-right: 25px;
+      background: black;
+    }
+
+    #toggle:checked + .menu{
+        display: block;
+    }
+
+    #desktop{
+      display: none;
+    }
+
+    #mobile{
+      display: initial;
+    }
+
+    .container img{
+      width: 100%;
+      position: relative;
+    }
+
+    .centered {
+      position: absolute;
+      top: 70%;
+      left: 15%;
+      transform: translate(-50%, -50%);
+      text-align: left;
+      margin-left: 100px;
+      margin-top: 100px;
+      color: #F2F2F2;
+    } 
+
+    .centered h1{
+      font-family: Lato;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 29px;
+      letter-spacing: 0em;
+      text-align: left;
+
+    }
+
+    .centered h6{
+      font-family: Lato;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0em;
+      
+      text-align: left;
+    }
+
+    #AboutMe{
+      background: #F2F2F2;
+      display: flex;
+      justify-content: space-between;
+      margin-top: -55px;
+    }
+
+    #AboutMe img{
+      margin-top: 86px;
+      margin-left: 10px;
+      width: 100%;
+      height: 50%;
+    }
+  
+    #AboutMe h1{
+      display: none;
+    }
+
+    .Mobile-About h2{
+      font-family: Lato;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 21px;
+      letter-spacing: 0em;
+      display: flex;
+      justify-content: center;
+    }
+  
+    #AboutMe h6{
+      font-family: Lato;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 14px;
+      letter-spacing: 0em;
+      text-align: left;  
+      margin-top: -2px;
+    } 
+
+    #For-Desktop{
+      display: none;
+    }
+
+    #For-Mobile{
+      display: block;
+      font-family: Lato;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 14px;
+      letter-spacing: 0em;
+      text-align: left;  
+      margin-top: -2px;
+    }
+
+    #Gallery{
+      max-width: 100%;
+      margin: auto;
+      background: #F2F2F2;
+      margin-top: -30px;
+    }
+  
+    #Gallery h1{
+      margin-top: 30px;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+    #Gallery h6{
+      text-align: center;
+      font-weight: 400;
+      color: #404040;
+    }
+  
+    .images{
+     width: 100%;
+     display: none;
+    }
+  
+    #Gallery button{
+      text-align: center;
+      margin-left: 160px;
+      cursor: pointer;
+    }
+
+    .Mobile-Images{
+      display: initial;
+      margin-left: 5px;
+    }
+
+
+    #Clients{
+      margin-top: 60px;
+    }
+    #Clients h6{
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      text-align: center;
+    }
+  
+    #Clients img{
+      display: flex;
+      justify-content: center;
+      background-color: #F2F2F2;
+      width: 50%;
+      align-items: center;
+    }
+
+    #ContactMe{
+      margin-top: 60px;
+    }
+
+    #ContactMe h1{
+      margin-top: 80px;
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 500;
+      size: 32px;
+      line-height: 21px;
+      text-align: center;
+    }
+  
+    #ContactMe h6{
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      text-align: center;
+    }
+  
+    .Contact-flex img{
+      display: none;
+    }
+  
+    .Form_container{
+      margin-right: 5rem;
+    }
+  input{
+      width: 100%;
+      height: 2rem;
+      padding-right: 3rem;
+      padding-left: 0.2rem;
+      margin-right: 5rem;
+      margin-top: 2rem;
+      border: 1px solid #404040;
+      border-radius: 2px;
+  }
+  
+  label{
+    float: left;
+    margin-bottom: -20px;
+  }
+  textarea{
+      
+      padding-bottom: 5rem;
+      width: 100%;
+      background: #F2F2F2;
+      border: 1px solid #404040;
+  }
+  
+  #submit{
+      margin-left: 1px;
+      width: 50%;
+      text-align: center;
+      margin-top: 2rem;
+      padding: 1rem 0;
+      background: #F2F2F2;
+      border: 1px solid #404040;
+      cursor: pointer;
+  }
+  
+  #submit:hover{
+      background: #A6A6A6;
+      transition: 0.5s;
+  }
+
+    /* .prev{
+      display: initial;
+    }
+    .next{
+      display: initial;
+    } */
+}
+
